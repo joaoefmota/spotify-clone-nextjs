@@ -4,7 +4,6 @@ import React, { FunctionComponent, PropsWithChildren } from "react";
 import { BiSearch } from "react-icons/bi";
 import { HiHome } from "react-icons/hi";
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
-import { twMerge } from "tailwind-merge";
 import Button from "./Button";
 
 type HeaderProps = PropsWithChildren<{}> & {
@@ -18,12 +17,7 @@ export const Header: FunctionComponent<HeaderProps> = ({
   const router = useRouter();
   const handleLogout = () => {};
   return (
-    <div
-      className={twMerge(
-        "h-fit bg-gradient-to-b from-emerald-800 p-6",
-        className
-      )}
-    >
+    <div className={"h-fit bg-gradient-to-b from-emerald-800 p-6 " + className}>
       <div className="w-full mb-4 flex items-center justify-between">
         <div className="hidden md:flex gap-x-2 items-center">
           <button

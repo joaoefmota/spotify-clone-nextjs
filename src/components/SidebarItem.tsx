@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, { FunctionComponent } from "react";
 import { IconType } from "react-icons";
-import { twMerge } from "tailwind-merge";
 
 type SidebarItemProps = {
   icon: IconType;
@@ -19,8 +18,7 @@ export const SidebarItem: FunctionComponent<SidebarItemProps> = ({
   return (
     <Link
       href={href}
-      className={twMerge(
-        `flex 
+      className={`flex 
         flex-row 
         h-auto 
         items-center 
@@ -32,9 +30,8 @@ export const SidebarItem: FunctionComponent<SidebarItemProps> = ({
         hover:text-white 
         transition 
         text-neutral-400 
-        py-1`,
-        active && "text-white"
-      )}
+        py-1
+        ${active && "text-white"}`}
     >
       <Icon size={26} />
       <p className="truncate w-full">{label}</p>
