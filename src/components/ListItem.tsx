@@ -35,7 +35,7 @@ export const ListItem: FunctionComponent<ListItemProps> = ({ href, name }) => {
       pr-4
       "
     >
-      <div className="relative min-h-{64px} min-w-{64px}">
+      <div className="relative min-h-[64px] min-w-[64px]">
         <div className="flex items-center gap-4 ps-3">
           <FaHeart className="text-green-500" size={32} />
           <p className="font-medium truncate py-5">{name}</p>
