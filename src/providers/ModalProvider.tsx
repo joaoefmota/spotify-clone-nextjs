@@ -1,9 +1,10 @@
 "use client";
 
 import { AuthModal } from "@/components/AuthModal";
-import { PropsWithChildren, useEffect, useState } from "react";
+import { UploadModal } from "@/components/UploadModal";
+import { useEffect, useState } from "react";
 
-const ModalProvider: React.FC<PropsWithChildren> = ({ children }) => {
+const ModalProvider: React.FC = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const ModalProvider: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <AuthModal />
+      <UploadModal />
     </>
   );
 };
