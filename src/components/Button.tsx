@@ -8,8 +8,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         type={type}
         className={
-          `w-full 
-          rounded-full 
+          `rounded-full 
           bg-green-500 
           border-transparent 
           px-3 

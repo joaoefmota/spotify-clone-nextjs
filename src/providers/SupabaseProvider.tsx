@@ -9,9 +9,6 @@ interface SupabaseProviderProps {
 }
 
 const SupabaseProvider: React.FC<SupabaseProviderProps> = ({ children }) => {
-  const supabseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
   const [supabaseClient] = useState(() =>
     createClientComponentClient<Database>()
   );
