@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Modal } from "./Modal";
 import useUploadModal from "@/hooks/useUploadModal";
 import { FieldValues, set, SubmitHandler, useForm } from "react-hook-form";
