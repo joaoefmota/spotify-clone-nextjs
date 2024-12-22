@@ -80,7 +80,7 @@ export const LikeButton: FunctionComponent<LikeButtonProps> = ({ songId }) => {
 
   return (
     <button
-      className="hover:opcaity-75 transition"
+      className="hover:opacity-75 transition"
       onClick={handleLike}
       title={isLiked ? "Unlike" : "Like"}
     >
