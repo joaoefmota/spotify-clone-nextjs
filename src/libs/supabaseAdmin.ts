@@ -57,7 +57,7 @@ const createOrRetrieveCustomer = async ({
   uuid,
 }: {
   email: string;
-  uuid: number;
+  uuid: string;
 }) => {
   const { data, error } = await supabaseAdmin
     .from("customers")

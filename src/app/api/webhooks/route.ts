@@ -4,7 +4,7 @@ import {
   manageSubscriptionStatusChange,
   upsertPriceRecord,
   upsertProductRecord,
-} from "@/libs/updateAdmin";
+} from "@/libs/supabaseAdmin";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
@@ -89,5 +89,3 @@ export async function POST(request: Request) {
   }
   return NextResponse.json({ received: true }, { status: 200 });
 }
-
-// Product delete and 5:58:50
